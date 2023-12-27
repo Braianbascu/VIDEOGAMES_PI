@@ -7,9 +7,9 @@ const createVideogamesHandler = require("../handlers/postCreateVideogames");
 
 videogamesRoutes.get("/", allVideogamesHandler);
 
-videogamesRoutes.get("/:id", ByIdVideogamesHandler )
+videogamesRoutes.get("/:id", ByIdVideogamesHandler);
 
-videogamesRoutes.post("/", createVideogamesHandler );
+videogamesRoutes.post("/", createVideogamesHandler);
 
 
 module.exports = videogamesRoutes;
