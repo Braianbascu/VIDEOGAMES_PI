@@ -36,7 +36,7 @@ const videogamesByIdController = async (id, source) =>{
   console.log(videogamesByDb)
 
   if(videogamesByDb){
-    const genres = videogamesByDb.Genres?.map((genre) => genre.name).join(", ").toString();
+    const genres = videogamesByDb.genres.map((genre) => genre.name).join(", ").toString();
     const videogamesInfo={
       id:videogamesByDb.id,
       name:videogamesByDb.name,

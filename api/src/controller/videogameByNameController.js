@@ -1,6 +1,7 @@
 const axios = require ("axios");
 const {API_KEY}= process.env;
 const {Videogame, Genre} = require ("../db");
+const { Op } = require('sequelize');
 
 
 
@@ -8,7 +9,9 @@ const videogameByNameController = async (name) => {
     try {
         // busco en la db por nombre
         const gamesDb = await Videogame.findAll({
-            where: { name: name },
+            where: { name:{
+                [Op.iLike]: `%${name}%`
+            }},
             include: {
                 model: Genre,
                 attributes: ["name"],
