@@ -1,0 +1,22 @@
+.detailContainer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* Agrega la clase de fondo aquí */
+    background: linear-gradient(to bottom, #1f1d1d, #747270);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(10%);
+  }
+.negro{
+    background: linear-gradient(to bottom, #000000, #363636); /* Degradado de gris oscuro a amarillo/naranja */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(80%);
+  }

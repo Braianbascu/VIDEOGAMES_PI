@@ -1,0 +1,10 @@
+.cardList{
+  max-width: 70vw;
+  margin: 15px auto; /* Cambié margin-bottom y añadí auto para centrar verticalmente también */
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Configuración para cinco columnas */
+  grid-gap: 20px; /* Ajusté el espacio entre las tarjetas */
+  justify-content: center; /* Añadida esta línea para centrar las tarjetas horizontalmente */
+  align-items: center;
+}

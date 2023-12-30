@@ -1,0 +1,37 @@
+/* Card.module.css */
+
+.card {
+    background-color:rgba(39, 39, 39, 0.3);; 
+    border: 2px solid #ff9100; 
+    border-radius: 6px;
+    padding: 6px;
+    margin: 6px;
+    width: 210px;
+    height: 230px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: scale(1.05); /* Cambia el tamaño */
+  }
+  .img {
+    background-color: #FFF;
+    max-width: 100%;
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    height: 120px;
+  }
+  
+  .h2 {
+    color: #fff; /* Color de texto gris oscuro */
+    font-size: 0.8rem
+  }
+  .genreContainer {
+    border: 2px solid #ff9100; /* Borde naranja */
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 20px; 
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco traslúcido */
+  }
+  
+ 

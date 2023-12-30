@@ -1,0 +1,27 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1f1d1d; /* Fondo gris oscuro */
+    border-bottom: 2px solid #ff9100; /* Borde naranja en la parte inferior */
+  }
+  
+  .logoContainer {
+    margin-right: 20px;
+  }
+  
+  .logo {
+    width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+  }
+  
+  .searchBar {
+    flex-grow: 1;
+    margin: 0 20px;
+    /* Agrega estilos según tus necesidades para la barra de búsqueda */
+  }
+  
+  .filterButtons {
+    display: flex;
+    /* Agrega estilos según tus necesidades para los botones de filtrado */
+  }
