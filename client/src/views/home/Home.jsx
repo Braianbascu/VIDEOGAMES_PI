@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllGames, getGenres } from '../../redux/actions/actions';
-import { useEffect } from 'react';
-import axios from 'axios';
+import { useEffect, useState } from 'react';
+
 
 
 import Cards from '../../components/Cards/Cards';
@@ -22,6 +22,7 @@ function Home() {
   },[dispatch])
 
  console.log(allVideogames)
+
 
   return (
     <div className={style.fondo}>

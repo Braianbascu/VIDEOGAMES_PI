@@ -1,22 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #1f1d1d, #747270);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden; /* Evita el desplazamiento vertical */
+}
+
 .detailContainer {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    /* Agrega la clase de fondo aquí */
-    background: linear-gradient(to bottom, #1f1d1d, #747270);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    filter: brightness(10%);
-  }
-.negro{
-    background: linear-gradient(to bottom, #000000, #363636); /* Degradado de gris oscuro a amarillo/naranja */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    filter: brightness(80%);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #1f1d1d; 
+  border: 2px solid #9b6a39;
+  border-radius: 10px; 
+  width: 80%; 
+  margin: auto; 
+  position:relative;
+  z-index: 1; 
+}
+
+.detailImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.detailData {
+  text-align: center;
+  color: #fff;
+}
+
+/* Estilos para las letras específicas */
+.detailTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detailSubtitle {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.detailDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.negro {
+  background: linear-gradient(to bottom, #000000, #363636);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  filter: brightness(80%);
+  z-index: 0;
+}
+.button {
+  background-color: #ff9100; 
+  color: #fff; 
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #e07b00; /* Cambia el color al pasar el mouse, recorda hoovers!!! */ 
+}

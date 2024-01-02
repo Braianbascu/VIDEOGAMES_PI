@@ -1,6 +1,6 @@
 import style from'./NavBar.module.css';
-import {Link} from 'react-router-dom'
 import React from 'react';
+import SearchBar from '../SearchBar/SearchBar';
 
 function NavBar() {
   return (
@@ -9,6 +9,7 @@ function NavBar() {
         <img src="https://assets.soyhenry.com/logoOG.png" alt="logo" className={style.logo} />
       </div>
       <div className={style.searchBar}>
+       <SearchBar/> 
       </div>
     </div>
   );
