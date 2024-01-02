@@ -6,7 +6,11 @@ import{
     GET_ALL_GAMES,
     GET_GENRES,
     GET_GAMES_BY_NAME,
-    GET_VIDEOGAME_BY_ID
+    GET_VIDEOGAME_BY_ID,
+    FILTER_BY_GENRE,
+    ORDER_BY_NAME,
+    FILTER_CREATED,
+    ORDER_BY_RANKING
 } from "./actionsType";
 
 //traer todos los juegos 
@@ -66,3 +70,36 @@ export const getVideogameByiD = (id)=>{
         
     }
 }
+
+// ver la necesidad de platforms. 
+
+//Filtrados
+
+export const filterVideogameByGenre = (payload)=>{
+    return{
+        type:FILTER_BY_GENRE,
+        payload
+    }
+}
+
+export const orderByName = (payload)=>{
+    return {
+        type:ORDER_BY_NAME,
+        payload
+    }
+}
+
+export const filterCreated = (payload)=>{
+    return {
+        type: FILTER_CREATED,
+        payload
+    }
+}
+
+export const orderByRanking = (payload) => {
+    return {
+        type: ORDER_BY_RANKING,
+        payload
+    };
+};
+

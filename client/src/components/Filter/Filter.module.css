@@ -1,0 +1,32 @@
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1f1d1d;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 0px;
+  }
+  .filter-container h2 {
+    color: #ff9100;
+    margin-bottom: 1px;
+  }
+  .filter-container > div {
+    margin-bottom: 15px;
+    flex: 1;
+    margin-right: 10px;
+  }
+  .filter-container select {
+    flex: 1; 
+    width: 100%; 
+    padding: 10px;
+    border: 2px solid #ff9100;
+    border-radius: 15px;
+    background-color: #1f1d1d;
+    color: #fff;
+    cursor: pointer;
+  }
+  .filter-container select:hover {
+    background-color: #3a3939;
+  }

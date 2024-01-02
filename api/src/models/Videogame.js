@@ -33,6 +33,11 @@ module.exports = (sequelize) => {
     rating:{
       type:DataTypes.FLOAT, // para medir con punto flotante
     },
+    created:{
+      type:DataTypes.BOOLEAN,
+      allowNull:false,
+      defaultValue:true
+    }
 
   },
 

@@ -1,15 +1,16 @@
+import { useSelector } from 'react-redux';
 import Card from '../Card/Card';
 import style from './Cards.module.css';
 import {Link} from 'react-router-dom'
 
-function Cards(props) {
+function Cards() {
 
-  const {allVideogames} = props;
+  const videogames = useSelector((state)=>state.videogames)
 
   return (
     <div className={style.cardList}>
       {
-        allVideogames?.map((game)=>(
+        videogames?.map((game)=>(
           <Link key={game.id} to={`/home/${game.id}`}>
           <Card game={game} />
         </Link>
@@ -19,6 +20,3 @@ function Cards(props) {
 }
 
 export default Cards;
-
-
-//Mariano TOrres

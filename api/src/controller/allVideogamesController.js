@@ -27,7 +27,8 @@ const allVideogamesController = async ()=>{
             image: game.background_image,
             released: game.released,
             rating: game.rating,
-            genres: game.genres.map(genre => genre.name)
+            genres: game.genres.map(genre => genre.name),
+            created:game.created
         }
     })
 

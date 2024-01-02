@@ -12,21 +12,20 @@ import style from './Home.module.css';
 function Home() {
   
   const dispatch =useDispatch()
-  const allVideogames = useSelector((state)=> state.allVideogames)
-  console.log(allVideogames)
-
+  const videogames = useSelector((state)=> state.videogames)
+  console.log(videogames)
+ 
 // al montarse llamamos las primeras Actions que necesitamos
   useEffect(()=>{
     dispatch(getAllGames())
     dispatch(getGenres())
   },[dispatch])
 
- console.log(allVideogames)
 
 
   return (
     <div className={style.fondo}>
-      <Cards allVideogames={allVideogames}/>
+      <Cards allVideogames={videogames}/>
     </div>
   );
 }
