@@ -10,7 +10,7 @@ import{
     FILTER_BY_GENRE,
     ORDER_BY_NAME,
     FILTER_CREATED,
-    ORDER_BY_RANKING
+    ORDER_BY_RANKING,
 } from "./actionsType";
 
 //traer todos los juegos 
@@ -71,10 +71,11 @@ export const getVideogameByiD = (id)=>{
     }
 }
 
+
 // ver la necesidad de platforms. 
 
-//Filtrados
 
+//Filtrados
 export const filterVideogameByGenre = (payload)=>{
     return{
         type:FILTER_BY_GENRE,

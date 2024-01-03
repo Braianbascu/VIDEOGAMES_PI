@@ -5,9 +5,9 @@
     border: 2px solid #ff9100; 
     border-radius: 6px;
     padding: 6px;
-    margin: 6px;
+    margin: 3px;
     width: 210px;
-    height: 230px;
+    height: 190px;
     text-align: center;
     transition: transform 0.2s;
   }

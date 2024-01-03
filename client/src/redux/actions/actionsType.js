@@ -9,4 +9,3 @@ export const ORDER_BY_NAME = "ORDER_BY_NAME ";
 export const FILTER_CREATED ="FILTER_CREATED"; 
 export const FILTER_BY_GENRE ="FILTER_BY_GENRE"; 
 export const ORDER_BY_RANKING = "ORDER_BY_RANKING";
-
