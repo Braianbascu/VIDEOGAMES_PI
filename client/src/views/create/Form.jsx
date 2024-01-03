@@ -72,13 +72,11 @@ const CreateVideogameForm = () => {
     try {
       const response = await axios.post('http://localhost:3001/videogames', {
         ...formData,
-        // Cambia 'genres' a 'genre' para que coincida con el nombre esperado en el backend
+        // recorda el cambio de 'genres' a 'genre' para que coincida con el nombre esperado en el backend
         genre: formData.genres,
       });
       console.log(response.data);
-
-      // Después de enviar el formulario con éxito, redirige a la página de inicio (o donde desees).
-      // Puedes cambiar la URL en window.location.href según tus necesidades.
+      // una vez que sale bien me manda nuevmante a home para verlo
       window.location.href = '/home';
     } catch (error) {
       console.error('Error al crear el videojuego:', error.message);
@@ -134,7 +132,7 @@ const CreateVideogameForm = () => {
         </div>
         <div>
           <label>GENRES:</label>
-          {/* Cambiado a campos de casillas de verificación */}
+          {/*revisar la posibilidad de mapear el estado */}
           {genresOptions.map((genre) => (
             <div key={genre}>
               <input
@@ -148,7 +146,6 @@ const CreateVideogameForm = () => {
           ))}
           {errors.genres && <p className={style['error-message']}>{errors.genres}</p>}
         </div>
-        {/* Otros campos... */}
         <div>
           <button type="submit">CREATE GAME</button>
         </div>

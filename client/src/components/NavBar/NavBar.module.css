@@ -6,18 +6,38 @@
   background-color: #1f1d1d;
   border-bottom: 2px solid #ff9100;
 }
+
 .logoContainer {
-  margin-right: 430px;
+  display: flex;
+  align-items: center;
   margin-left: 10px;
 }
+
 .logo {
-  width: 100px; 
+  width: 100px;
+  margin-right: 10px; 
 }
+
+.formButton {
+  margin-left: 10px;
+  margin-right: 200px;
+  background-color: #1f1d1d; 
+  color: #fff; 
+  border: 2px solid #ff9100; 
+  padding: 8px 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.formButton:hover {
+  background-color: #3a3939; /* Cambia el color de fondo al pasar el mouse */
+}
+
 .centerContent {
   flex-grow: 1;
   margin: 0 auto;
 }
+
 .filterButtons {
   display: flex;
 }
-
